@@ -16,8 +16,8 @@ I combine **Full Stack Engineering** (to build), **Power BI** (to measure), and 
 
 ### 📊 /02-The-Intelligence (The Measure)
 *Business Intelligence & Data Strategy.*
-- **Focus:** Power BI Dashboards, DAX Logic, Real-time Engineering Metrics.
-- **Goal:** Replacing "gut feelings" with data-driven decision-making.
+- **Focus:** Power BI Dashboards, DAX Logic, RealTime Engineering Metrics.
+- **Goal:** Replacing "gut feelings" with DataDriven DecisionMaking.
 
 ### 🔄 /03-The-Process (The Execution)
 *Project Management & Delivery.*
