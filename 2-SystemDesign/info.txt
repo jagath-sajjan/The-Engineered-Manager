@@ -1,0 +1,7 @@
+Vertical vs. Horizontal Scaling: Knowing when to buy a bigger server vs. when to add more servers.
+
+The CAP Theorem: Understanding the trade-off between Consistency, Availability, and Partition Tolerance.
+
+Load Balancing: Techniques like Round Robin, Least Connections, and IP Hash.
+
+Caching Strategies: Implementing Redis/Memcached at various levels (Client, CDN, Server, Database) and handling cache invalidation.
