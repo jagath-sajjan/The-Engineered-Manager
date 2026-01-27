@@ -1,6 +1,8 @@
 # The Engineered Manager 
 > *Bridging the gap between Code, Data, and Strategy.*
 
+## Progress Day-2: https://day2.tiiny.site/
+
 ## 🚀 Mission
 This repository documents my framework for **Technical Leadership**. 
 It is not just about writing code; it is about engineering the **process** of software delivery. 
