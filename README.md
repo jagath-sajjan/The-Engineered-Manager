@@ -1,7 +1,7 @@
 # The Engineered Manager 
 > *Bridging the gap between Code, Data, and Strategy.*
 
-## Progress Day-3: hhttps://everydayupdates.tiiny.site/
+## Progress Day-3: https://everydayupdates.tiiny.site/
 
 ## 🚀 Mission
 This repository documents my framework for **Technical Leadership**. 
