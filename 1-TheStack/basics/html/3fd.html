@@ -5,88 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Day 3 ~ FreeDay</title>
 </head>
+<body style="background-color: #cde5d9; font-family: sans-serif; padding: 20px; text-align: center;">
+    <header>
+        <h1>Videos, Audio, IFrame</h1>
+        <p>All Of The Be Below:</p>
+    </header>
 
-<body style="background-color:#cde5d9; font-family:sans-serif; padding:20px; text-align:center; margin:0;">
+    <hr color="black">
 
-<header>
-    <h1>Videos, Audio, IFrame</h1>
-    <p>All Of The Below (Responsive)</p>
-</header>
+    <main>
+        <section>
+            <h1>Native Video:</h1>
+            <video width="400" controls poster="https://via.placeholder.com/400x225" style="display: block; margin: 0 auto;">
+                <source src="3fd/1.mp4" type="video/mp4">
+                Your Browser Does Not Support Video Tag
+            </video>
+            <p><small><i>Note: The 'Poster' Is The Image Shown Before The Video Plays.</i></small></p>    
+        </section>
 
-<hr style="border:0; height:1px; background:black; margin:30px 0;">
+        <hr color="black">
 
-<main>
+        <section>
+            <h1>Embed Content IFrame:</h1>
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/uir-lfDPn1o"
+                title="Youtube Video Player"
+                frameborder="0"
+                allowfullscreen
+                style="display: block; margin: 0 auto;">
+            </iframe>
+        </section>
 
-<section>
-    <h1>Native Video</h1>
+        <hr color="black">
 
-    <div style="
-        max-width:800px;
-        width:100%;
-        margin:0 auto;
-        aspect-ratio:16/9;
-    ">
-        <video controls
-            poster="https://via.placeholder.com/800x450"
-            style="
-                width:100%;
-                height:100%;
-                display:block;
-                border-radius:10px;
-                background:black;
-            ">
-            <source src="3fd/1.mp4" type="video/mp4">
-            Your browser does not support the video tag
-        </video>
-    </div>
+        <section>
+            <h1>Native Audio:</h1>
+            <p>My Fav Song Have A Listen</p>
+            <audio controls style="display: block; margin: 0 auto;">
+                <source src="3fd/1.mp3" type="audio/mp3">
+                Your Browser Doesn't Support Audio Tag
+            </audio>
+        </section>
 
-    <p><small><i>Poster shows before the video plays.</i></small></p>
-</section>
-
-<hr style="border:0; height:1px; background:black; margin:30px 0;">
-
-<section>
-    <h1>Embed Content IFrame</h1>
-
-    <div style="
-        max-width:800px;
-        width:100%;
-        margin:0 auto;
-        aspect-ratio:16/9;
-    ">
-        <iframe
-            src="https://www.youtube.com/embed/uir-lfDPn1o"
-            title="YouTube Video Player"
-            allowfullscreen
-            style="
-                width:100%;
-                height:100%;
-                border:0;
-                display:block;
-                border-radius:10px;
-            ">
-        </iframe>
-    </div>
-</section>
-
-<hr style="border:0; height:1px; background:black; margin:30px 0;">
-
-<section>
-    <h1>Native Audio</h1>
-    <p>My Fav Song — have a listen 🎧</p>
-
-    <audio controls
-        style="
-            width:100%;
-            max-width:400px;
-            display:block;
-            margin:0 auto;
-        ">
-        <source src="3fd/1.mp3" type="audio/mpeg">
-        Your browser doesn't support audio tag
-    </audio>
-</section>
-
-</main>
+    </main>
 </body>
 </html>
