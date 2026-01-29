@@ -1,7 +1,7 @@
 # The Engineered Manager 
 > *Bridging the gap between Code, Data, and Strategy.*
 
-## Progress Day-3: https://everydayupdates.tiiny.site/
+## Html Progress: https://jagath-sajjan.github.io/The-Engineered-Manager/
 
 ## 🚀 Mission
 This repository documents my framework for **Technical Leadership**. 
