@@ -1,17 +1,207 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
-<html>
- <head>
-  <title>Index of /1-TheStack/</title>
- </head>
- <body>
-<h1>Index of /1-TheStack/basics/html/</h1>
-<pre><img src="" alt="Icon "> <a href="?C=N;O=D">Name</a>                    <a href="?C=M;O=A">Last modified</a>      <a href="?C=S;O=A">Size</a>  <a href="?C=D;O=A">Description</a><hr><img src="" alt="[PARENTDIR]"> <a href="../">Parent Directory</a>                             -   
-<img src="" alt="[HTML]"> <a href="1-TheStack/basics/html/1.html">1.html</a>                  2026-01-26 12:00  749 B  
-<img src="" alt="[HTML]"> <a href="1-TheStack/basics/html/2.html">2.html</a>                  2026-01-27 09:15  1.36K  
-<img src="" alt="[HTML]"> <a href="1-TheStack/basics/html/3.html">3.html</a>                  2026-01-28 14:30  1.49K  
-<img src="" alt="[HTML]"> <a href="1-TheStack/basics/html/3fd.html">3fd.html</a>              2026-01-28 16:45  1.64K
-<img src="" alt="[HTML/CSS]"> <a href="1-TheStack/basics/css/1/index.html">1c.html</a>        2026-01-30 22:34  4KB  
-<hr></pre>
-<address>Apache/2.4.41 (Ubuntu) Server at github.io Port 443</address>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Index of /1-TheStack/basics/html/</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 24px;
+      background: #0f172a;
+      color: #e5e7eb;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    }
+
+    h1 {
+      margin-bottom: 6px;
+      font-size: 1.6rem;
+    }
+
+    p {
+      margin-top: 0;
+      color: #9ca3af;
+      font-size: 0.95rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: #020617;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+      font-size: 0.95rem;
+    }
+
+    th {
+      color: #93c5fd;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    th:hover {
+      text-decoration: underline;
+    }
+
+    th.sorted::after {
+      content: attr(data-arrow);
+      margin-left: 6px;
+      font-size: 0.8em;
+    }
+
+    tbody tr {
+      border-top: 1px solid #1e293b;
+    }
+
+    tbody tr:hover {
+      background: #020617;
+    }
+
+    a {
+      color: #e5e7eb;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .parent a {
+      color: #60a5fa;
+    }
+
+    footer {
+      margin-top: 24px;
+      font-size: 12px;
+      color: #64748b;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Index of /1-TheStack/basics/html/</h1>
+  <p>Simple directory listing</p>
+
+  <table id="index">
+    <thead>
+      <tr>
+        <th data-col="name">Name</th>
+        <th data-col="date">Last modified</th>
+        <th data-col="size">Size</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr class="parent" data-name="" data-date="" data-size="-1">
+        <td><a href="../">Parent Directory</a></td>
+        <td>—</td>
+        <td>—</td>
+      </tr>
+
+      <tr data-name="1.html" data-date="2026-01-26 12:00" data-size="749">
+        <td><a href="1-TheStack/basics/html/1.html">1.html</a></td>
+        <td>2026-01-26 12:00</td>
+        <td>749 B</td>
+      </tr>
+
+      <tr data-name="2.html" data-date="2026-01-27 09:15" data-size="1393">
+        <td><a href="1-TheStack/basics/html/2.html">2.html</a></td>
+        <td>2026-01-27 09:15</td>
+        <td>1.36 KB</td>
+      </tr>
+
+      <tr data-name="3.html" data-date="2026-01-28 14:30" data-size="1526">
+        <td><a href="1-TheStack/basics/html/3.html">3.html</a></td>
+        <td>2026-01-28 14:30</td>
+        <td>1.49 KB</td>
+      </tr>
+
+      <tr data-name="3fd.html" data-date="2026-01-28 16:45" data-size="1680">
+        <td><a href="1-TheStack/basics/html/3fd.html">3fd.html</a></td>
+        <td>2026-01-28 16:45</td>
+        <td>1.64 KB</td>
+      </tr>
+
+      <tr data-name="1c.html" data-date="2026-01-30 22:34" data-size="4096">
+        <td><a href="1-TheStack/basics/css/1/index.html">1c.html</a></td>
+        <td>2026-01-30 22:34</td>
+        <td>4 KB</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <footer>
+    Click column headers to sort (Apache-style)
+  </footer>
+
+  <script>
+    const table = document.getElementById("index");
+    const headers = table.querySelectorAll("th");
+    const tbody = table.querySelector("tbody");
+
+    let current = { col: null, order: "A" };
+
+    headers.forEach(th => {
+      th.addEventListener("click", () => {
+        const col = th.dataset.col;
+        const order = (current.col === col && current.order === "A") ? "D" : "A";
+
+        sortTable(col, order);
+        updateHeaders(th, order);
+        updateURL(col, order);
+
+        current = { col, order };
+      });
+    });
+
+    function sortTable(col, order) {
+      const rows = Array.from(tbody.querySelectorAll("tr"))
+        .filter(r => !r.classList.contains("parent"));
+
+      rows.sort((a, b) => {
+        let x = a.dataset[col];
+        let y = b.dataset[col];
+
+        if (col === "size") {
+          x = Number(x);
+          y = Number(y);
+        }
+
+        if (x < y) return order === "A" ? -1 : 1;
+        if (x > y) return order === "A" ? 1 : -1;
+        return 0;
+      });
+
+      rows.forEach(r => tbody.appendChild(r));
+    }
+
+    function updateHeaders(active, order) {
+      headers.forEach(h => {
+        h.classList.remove("sorted");
+        h.removeAttribute("data-arrow");
+      });
+
+      active.classList.add("sorted");
+      active.setAttribute("data-arrow", order === "A" ? "▲" : "▼");
+    }
+
+    function updateURL(col, order) {
+      const map = { name: "N", date: "M", size: "S" };
+      history.replaceState(null, "",
+        `?C=${map[col]};O=${order}`
+      );
+    }
+  </script>
+
 </body>
 </html>
